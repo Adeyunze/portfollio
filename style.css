@@ -1,0 +1,236 @@
+ .nav-mine {
+     animation-name: topkey;
+     position: fixed;
+     animation-duration: 3s;
+     animation-fill-mode: forwards;
+     width: 100%;
+ }
+ 
+ @keyframes topkey {
+     0% {
+         top: -200px;
+     }
+     50% {
+         top: 50px;
+     }
+     100% {
+         top: 0px;
+     }
+ }
+ 
+ .name {
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     animation-name: yunze;
+     animation-delay: 0s;
+     animation-duration: 3s;
+     animation-fill-mode: forwards;
+     position: relative;
+     color: rgb(215, 215, 215);
+ }
+ 
+ .my-name {
+     color: tomato;
+ }
+ 
+ .ade {
+     border-radius: 50%;
+     width: 20%;
+     animation-name: off;
+     animation-delay: 2s;
+     animation-duration: 3s;
+     position: relative;
+     animation-fill-mode: forwards;
+     opacity: 0;
+ }
+ 
+ @keyframes yunze {
+     0% {
+         bottom: -700px;
+     }
+     100% {
+         bottom: 0px;
+     }
+ }
+ 
+ body {
+     background-image: url(/img/universe-1622107_1280.png);
+     line-height: 1.5em;
+     font-family: 'Texturina', serif;
+     background-attachment: fixed;
+     background-color: rgba(0, 0, 0, 0.301);
+ }
+ 
+ .intro {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin-top: 100px;
+     /* color: rgba(255, 255, 255, 0.048); */
+     height: 70vh;
+ }
+ 
+ .skills {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin-top: 100px;
+ }
+ 
+ .work {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin-top: 30px;
+ }
+ 
+ .skills h3 {
+     color: rgb(253, 253, 253);
+ }
+ 
+ .skills p {
+     color: rgb(253, 251, 251);
+ }
+ 
+ .transit {
+     /* margin-top: 100px; */
+     font-weight: 600;
+     font-size: 16px;
+     animation-name: yunze;
+     animation-delay: 0s;
+     animation-duration: 3s;
+     animation-fill-mode: forwards;
+     position: relative;
+     color: rgb(254, 254, 254);
+ }
+ 
+ .left {
+     margin-top: 20px;
+     animation-name: carl;
+     animation-delay: 0s;
+     position: relative;
+     animation-fill-mode: forwards;
+     animation-duration: 3s;
+     color: white;
+ }
+ 
+ @keyframes carl {
+     0% {
+         left: -500px;
+         opacity: 0;
+     }
+     100% {
+         left: 0px;
+         opacity: 1;
+     }
+ }
+ 
+ .off {
+     margin-top: 50px;
+     width: 20%;
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: 700;
+     color: rgba(0, 0, 0, 0.418);
+     animation-name: off;
+     animation-delay: 2s;
+     animation-duration: 3s;
+     position: relative;
+     animation-fill-mode: forwards;
+     opacity: 0;
+ }
+ 
+ .description {
+     color: white;
+ }
+ 
+ @keyframes off {
+     0% {
+         opacity: 0%;
+     }
+     100% {
+         opacity: 100%;
+     }
+ }
+ 
+ .flex-logo {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     width: 30%;
+ }
+ 
+ .media {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     width: 10%;
+ }
+ 
+ .media img {
+     width: 30px;
+     height: 30px;
+     transition: all 0.2s ease;
+ }
+ 
+ .media img:hover {
+     opacity: 0.7;
+ }
+ 
+ .foot {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin-top: 100px;
+     bottom: 0;
+ }
+ 
+ .black {
+     color: rgb(212, 212, 212);
+     bottom: 0px;
+ }
+ 
+ @media (max-width:800px) {
+     body {
+         background-image: url(/img/universe-1622107.png);
+         background-size: contain;
+     }
+     .off {
+         width: 50%;
+     }
+     .ade {
+         width: 50%;
+     }
+     .name {
+         font-size: 25px;
+         margin-top: 20px;
+     }
+     .transit {
+         font-size: 13px;
+         margin-top: 20px;
+     }
+     .intro {
+         margin-top: 150px;
+     }
+     .media {
+         width: 40%;
+     }
+ }
+ /*  
+ @media (max-width:500px) {
+     body {
+         background-image: url(/img/universe-1622107.png);
+         background-size: contain;
+     }
+ } */
